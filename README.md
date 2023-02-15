@@ -1,11 +1,8 @@
+<img src="flowchart.png" width="700px"><br><br>
+
 # Identeq Coding Challenge
 
 This coding challenge is based on a real problem we've encountered here at IDenteq. We process hundreds of thousands of client addresses, some of which are very well formatted, others not so much!
-
-
-
-
-
 
 As part of our address processing, we need to flag addresses that don't have a street name consistent with their postcode. For example try googling *"Devonshire Drive, ST6 4BF"*, you'll see this address doesn't exist, whereas *"Innovation Way, ST6 4BF"* does. We need to filter out addresses that don't have a valid street name consistent with their postcode.
 
