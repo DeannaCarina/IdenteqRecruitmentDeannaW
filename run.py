@@ -1,5 +1,5 @@
         
-# Install pandas in env with pip install pandas
+# Install pandas in env with 'pip install pandas'
 import csv
 import pandas as pd
 
@@ -7,13 +7,17 @@ import pandas as pd
 input_data = pd.read_csv('example_input_data.csv')
 abp_data = pd.read_csv('example_abp_data.csv')
 
+
 # Creating a new CSV with data from input_data
 with open('example_output_data.csv', 'w') as f:
     data = pd.DataFrame(input_data)
     data.to_csv("example_output_data.csv")
     output_data = pd.read_csv('example_output_data.csv')
     
+    df = pd.DataFrame(output_data)
+    df["Street_In_Postcode"] = "test"
 
+    
 
 
 # print(input_data)
